@@ -4,6 +4,7 @@ import { animate, delay, motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import hero from '../../assets/hero.svg';
 
 
 
@@ -89,7 +90,8 @@ const HeaderSection = () => {
   const name = splitString("Madesh M");
 
   return (
-    <div className="text-white min-h-screen bg-[url('src/assets/hero.svg')] bg-center bg-no-repeat bg-cover border-b border-[#6F4CC1] ">
+    <div className="text-white min-h-screen bg-center bg-no-repeat bg-cover border-b border-[#6F4CC1]"
+    style={{ backgroundImage: `url(${hero})` }}>
       <Navbar />
     <div className="grid h-[800px] gap-5 content-center max-2xl:grid-cols-2 max-3xl:grid-cols-2 max-xl:grid-cols-2  max-lg:grid-cols-1 max-sm:grid-cols-1 max-md:grid-cols-1 max-sm:justify-items-center md:justify-items-center relative overflow-hidden px-[6rem] max-sm:px-[2rem] max-sm:mt-1 max-md:mt-1 max-lg:pt-24 ">
     <motion.div

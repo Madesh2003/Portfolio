@@ -55,7 +55,7 @@ const Contact = () => {
   return (
     <motion.div
       ref={ref}
-      className="min-h-screen text-white grid grid-cols-2 max-sm:grid-cols-1 max-md:grid-cols-1 gap-5 content-center max-sm:px-[2rem] px-[6rem]"
+      className="min-h-screen my-10 text-white grid grid-cols-2 max-sm:grid-cols-1 max-md:grid-cols-1 gap-5 content-center max-sm:px-[2rem] px-[6rem]"
       variants={variants}
       initial="initial"
       whileInView="animate"

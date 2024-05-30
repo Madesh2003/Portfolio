@@ -1,6 +1,9 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import section from '../../assets/section.svg';
+import project1 from '../../assets/project1.jpg'
+import project2 from '../../assets/project2.jpg'
 
 const Projects = () => {
   const containerRef = useRef(null);
@@ -64,7 +67,8 @@ const Projects = () => {
   };
 
   return (
-    <div className='min-h-screen bg-[url("src/assets/section.svg")] bg-center bg-cover bg-no-repeat border-b border-[#6F4CC1] '>
+    <div className='min-h-screen bg-center bg-cover bg-no-repeat border-b border-[#6F4CC1] '
+    style={{ backgroundImage: `url(${section})` }}>
       <motion.div
         ref={containerRef}
         className="max-sm:px-[2rem] px-[6rem]"
@@ -88,7 +92,7 @@ const Projects = () => {
           <div className="bg-[#0c0e27] h-auto w-[400px] max-lg:h-[600px] max-sm:w-[300px] rounded-xl border border-[#312E81] overflow-hidden">
             <div className="">
               <img
-                src="https://madesh-portfolio.netlify.app/src/assets/project1.jpg"
+                src={project1}
                 className="rounded-t-xl h-[200px] w-full object-cover"
                 alt="Project Image"
               />
@@ -128,7 +132,7 @@ const Projects = () => {
           <div className="bg-[#0c0e27] h-auto w-[400px] max-sm:w-[300px] rounded-xl border border-[#312E81] overflow-hidden">
             <div className="">
               <img
-                src="https://madesh-portfolio.netlify.app/src/assets/project2.jpg"
+                src={project2}
                 className="rounded-t-xl h-[200px] w-full object-cover"
                 alt="Project Image"
               />

@@ -1,11 +1,38 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import html from '../../assets/skills/html.svg';
+import css from '../../assets/skills/css.svg';
+import javascript from '../../assets/skills/javascript.svg';
+import bootstrap from '../../assets/skills/bootstrap.svg';
+import tailwind from '../../assets/skills/tailwind.svg';
+import materialui from '../../assets/skills/materialui.svg';
+import framer_motion from '../../assets/skills/framer_motion.svg';
+import react from '../../assets/skills/react.svg';
+import nodejs from '../../assets/skills/nodejs.svg';
+import express from '../../assets/skills/Express.svg';
+import mysql from '../../assets/skills/mysql.svg';
+import mongoDB from '../../assets/skills/mongoDB.svg';
+import git from '../../assets/skills/git.svg';
+import aws from '../../assets/skills/aws.svg';
+import figma from '../../assets/skills/figma.svg';
 
 const Skills = () => {
   const skills = [
-    'html', 'css', 'javascript', 'bootstrap', 'tailwind', 'materialui',
-    'framer-motion', 'react', 'nodejs', 'Express', 'mysql', 'mongoDB',
-    'git', 'aws', 'figma'
+    { name: 'HTML', img: html },
+    { name: 'CSS', img: css },
+    { name: 'JavaScript', img: javascript },
+    { name: 'Bootstrap', img: bootstrap },
+    { name: 'Tailwind', img: tailwind },
+    { name: 'MaterialUI', img: materialui },
+    { name: 'Framer Motion', img: framer_motion },
+    { name: 'React', img: react },
+    { name: 'NodeJS', img: nodejs },
+    { name: 'Express', img: express },
+    { name: 'MySQL', img: mysql },
+    { name: 'MongoDB', img: mongoDB },
+    { name: 'Git', img: git },
+    { name: 'AWS', img: aws },
+    { name: 'Figma', img: figma }
   ];
 
   const containerRef = useRef(null);
@@ -119,15 +146,16 @@ const Skills = () => {
           >
             {[...skills, ...skills, ...skills].map((data, index) => (
               <motion.a
-                whileHover={{scale: 1.2, 
+                whileHover={{
+                  scale: 1.2,
                   transition: { duration: 0.5 },
                 }}
                 key={index}
                 href=""
                 className="bg-[#11152C] mt-[30px] h-[120px] w-[120px] px-[40px] py-[60px] rounded-lg flex flex-col justify-center space-y-5 items-center border-t border-[#5C41A9] hover:border shadow-xl"
               >
-                <img src={`src/assets/skills/${data}.svg`} className="w-[50px] h-[50px]" alt={data} />
-                <p className={data === "framer-motion" ? 'text-white font-semibold text-xs' : 'text-white font-semibold text-sm'}>{data.toUpperCase()}</p>
+                <img src={data.img} className="w-[50px] h-[50px]" alt={data.name} />
+                <p className={data.name === "Framer Motion" ? 'text-white font-semibold text-xs' : 'text-white font-semibold text-sm'}>{data.name.toUpperCase()}</p>
               </motion.a>
             ))}
           </motion.div>

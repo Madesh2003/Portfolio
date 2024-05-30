@@ -1,5 +1,7 @@
 import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
+import hero from '../../assets/hero.svg';
+import degree from '../../assets/degree.svg';
 
 const Education = () => {
     const containerRef = useRef(null);
@@ -63,7 +65,8 @@ const Education = () => {
     };
   
   return (
-    <div className='min-h-screen bg-[url("src/assets/section.svg")] bg-cover bg-center bg-no-repeat border-b border-[#6F4CC1] '>
+    <div className='min-h-screen bg-cover bg-center bg-no-repeat border-b border-[#6F4CC1]'
+    style={{ backgroundImage: `url(${hero})` }}>
       <motion.div
         ref={containerRef}
         className="max-sm:px-[2rem] px-[6rem]"
@@ -87,7 +90,7 @@ const Education = () => {
         <p className='text-center font-semibold text-[#1ED6B0] text-base max-sm:text-[12px] '>2021 - 2024</p>
         <div className='flex space-x-5 items-center h-[80px] mt-[8px]'>
             <div>
-            <img src="src/assets/degree.svg" className='h-[60px] w-[60px] max-sm:h-[40px] max-sm:w-[40px] text-violet-600 ' alt="" />
+            <img src={degree} className='h-[60px] w-[60px] max-sm:h-[40px] max-sm:w-[40px] text-violet-600 ' alt="" />
             </div>
             <div className='text-white'>
                 <p className='font-semibold tracking-wider text-xl max-sm:text-[14px] '>B.Sc. Information Technology</p>
@@ -100,7 +103,7 @@ const Education = () => {
         <p className='text-center font-semibold text-[#1ED6B0] text-base max-sm:text-[12px] '>2019 - 2021</p>
         <div className='flex space-x-5 items-center h-[80px] mt-[8px]'>
             <div>
-            <img src="src/assets/degree.svg" className='h-[60px] w-[60px] max-sm:h-[40px] max-sm:w-[40px] text-violet-600 ' alt="" />
+            <img src={degree} className='h-[60px] w-[60px] max-sm:h-[40px] max-sm:w-[40px] text-violet-600 ' alt="" />
             </div>
             <div className='text-white'>
                 <p className='font-semibold tracking-wider text-xl max-sm:text-[14px] uppercase '>higher secondary</p>

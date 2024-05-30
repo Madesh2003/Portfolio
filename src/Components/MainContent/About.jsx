@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
+import section from '../../assets/section.svg'
 
 const About = () => {
   const ref = useRef(null);
@@ -62,7 +63,8 @@ const About = () => {
     },
   };
   return (
-   <div className="min-h-screen grid grid-cols-1 bg-[url('src/assets/section.svg')] border-b border-[#6F4CC1] bg-center bg-cover bg-no-repeat">
+   <div className="min-h-screen grid grid-cols-1 border-b border-[#6F4CC1] bg-center bg-cover bg-no-repeat" 
+   style={{ backgroundImage: `url(${section})` }}>
      <motion.div
       ref={ref}
       className="max-sm:px-[2rem] px-[6rem] "

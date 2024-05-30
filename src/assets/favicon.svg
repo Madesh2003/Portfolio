@@ -1,0 +1,8 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with black color -->
+  <rect width="64" height="64" fill="#000000" />
+  <!-- Letter M with shadow effect -->
+  <text x="32" y="38" font-family="Arial, sans-serif" font-size="32" fill="#FFFFFF" text-anchor="middle" alignment-baseline="middle" style="font-weight:bold; text-shadow: 2px 2px #000000;">M</text>
+  <!-- Decorative circle -->
+  <circle cx="32" cy="32" r="30" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+</svg>

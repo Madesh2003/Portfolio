@@ -88,7 +88,7 @@ const Projects = () => {
           <div className="bg-[#0c0e27] h-auto w-[400px] max-lg:h-[600px] max-sm:w-[300px] rounded-xl border border-[#312E81] overflow-hidden">
             <div className="">
               <img
-                src="./Portfolio/src/assets/project2.jpg"
+                src="./src/assets/project2.jpg"
                 className="rounded-t-xl h-[200px] w-full object-cover"
                 alt="Project Image"
               />

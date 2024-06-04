@@ -8,6 +8,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
+import { SiCodechef } from "react-icons/si";
 
 const variants = {
   initial: {
@@ -122,6 +123,13 @@ const Contact = () => {
             className="text-2xl max-sm:text-lg bg-[#9aa7b4] hover:bg-[#0DF8B5] duration-500 text-black rounded-full p-3"
           >
             <SiLeetcode />
+          </a>
+          <a
+            href="https://www.codechef.com/users/madesh2003"
+            className="text-2xl max-sm:text-lg bg-[#9aa7b4] hover:bg-[#0DF8B5] duration-500 text-black rounded-full p-3"
+            target="_blank"
+          >
+            <SiCodechef />
           </a>
         </motion.div>
       </motion.div>

@@ -5,6 +5,9 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import hero from '../../assets/hero.svg';
+import { SiCodechef } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+
 
 
 
@@ -120,7 +123,9 @@ const HeaderSection = () => {
         </h3>
         <div className="flex space-x-5 max-3xl:text-4xl max-2xl:text-4xl max-xl:text-3xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
           <a href="https://github.com/Madesh2003" target="_blank" className="hover:text-violet-600 duration-500"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/madesh2003/" target="_blank"  className="hover:text-violet-600 duration-500"><FaLinkedin /></a>     
+          <a href="https://www.linkedin.com/in/madesh2003/" target="_blank"  className="hover:text-violet-600 duration-500"><FaLinkedin /></a>    
+          <a href="https://www.codechef.com/users/madesh2003" className="hover:text-violet-600 duration-500" target="_blank" ><SiCodechef /></a> 
+          <a href="https://leetcode.com/u/Madesh2003/" className="hover:text-violet-600 duration-500" target="_blank" ><SiLeetcode /></a>
         </div>
         <div className="px-5 py-3 max-sm:px-3 max-sm:py-2 hover:text-violet-600 hover:bg-white duration-500 border w-fit rounded-[25px]">
           <a href="https://drive.google.com/file/d/1F7CdhaH-EyeXm-VgSXT_EcyIUbsNwRPf/view?usp=drive_link" target="_blank" className="flex flex-row items-center font-semibold uppercase tracking-wider max-3xl:text-xl max-2xl:text-xl max-xl:text-lg max-lg:text-lg max-md:text-lg max-sm:text-[12px]">

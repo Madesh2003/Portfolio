@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 
 //Profile Image
-import profile from "@/assets/myProfile.jpg";
+import profile from "@/assets/icons/myProfile.jpg";
 
 //Tech Images
 import html from "@/assets/icons/html.png";

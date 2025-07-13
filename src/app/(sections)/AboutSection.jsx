@@ -2,7 +2,6 @@
 
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
 import React from "react";
 import { GridPattern } from "@/components/magicui/grid-pattern";
 import { cn } from "@/lib/utils";
@@ -105,10 +104,9 @@ const AboutSection = () => {
             will-change-transform
           "
             >
-              <Image
-                src={PROFILE}
+              <img
+                src={PROFILE.src}
                 alt="Profile photo"
-                priority
                 className="object-cover min-lg:w-80 min-lg:h-80 max-md:h-60"
               />
             </motion.div>

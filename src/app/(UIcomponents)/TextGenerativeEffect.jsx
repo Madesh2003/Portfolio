@@ -23,7 +23,7 @@ export const TextGenerateEffect = ({
   }, [scope.current]);
 
   const renderWords = () => {
-    const selectiveWords = ["ui", "developer", "madesh"]
+    const selectiveWords = ["soul", "developer", "madesh"]
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {

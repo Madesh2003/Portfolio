@@ -51,7 +51,7 @@ export const HERO_SECTION = {
 };
 
 export const ABOUT_SECTION = {
-  TITLE: "My Code. My Craft. My Story",
+  TITLE: "Meet the Dev",
   DESC: "I'm Madesh, a Front-End Developer at Inunet and BSc.IT student with hands-on experience in MERN, MEAN, PERN, Next.js, and JAMstack. I've built multiple full-stack projects using modern tools like Tailwind CSS and Material-UI, and I'm passionate about problem-solving, clean code, and building impactful web applications",
   PROFILE: profile,
 };
